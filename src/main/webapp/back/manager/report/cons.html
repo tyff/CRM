@@ -1,0 +1,33 @@
+
+
+<script src="../js/common.js"></script>
+<script src="../js/cons.js"></script>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+
+<div class="button_bar">
+	
+	<a id="help" href="#" class="easyui-linkbutton" data-options="iconCls:'icon-help'" onclick="alert('欢迎使用');return false;">帮助</a>
+	<a id="consS_search" href="#" class="easyui-linkbutton" data-options="iconCls:'icon-search'" onclick="return false;">查询</a>
+	</div>
+	
+	<table class="query_form_table" height="53">
+	<tr>
+		<th>报表方式</th>
+		<td>
+			<select id="cons_type">
+				<option value='grade' selected>按等级</option>
+				<option value="credit">按信用度</option>
+				<option value="satisfaction">按满意度</option>
+			</select>
+		</td>
+
+	<th>&nbsp;</th>
+		<td>
+			&nbsp;
+		</td>
+			</tr>
+</table>
+<br />
+<table id="cons_list_table" class="data_list_table"></table>
+<div id="cons_chart" style="height: 300px;max-width:500px"></div>
